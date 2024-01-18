@@ -35,3 +35,22 @@ kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
 favoriteEl.setAttribute("style", "font-size:20px;");
 
 // TODO: Add ordered list items containing four favorite foods
+var ulEl = document.createElement('ul');
+var liEl1 = document.createElement('li');
+var liEl2 = document.createElement('li');
+var liEl3 = document.createElement('li');
+var liEl4 = document.createElement('li');
+
+// no emoji BOO
+liEl1.textContent = 'Salad';
+liEl2.textContent = 'Carrots';
+liEl3.textContent = 'Green Beans';
+liEl4.textContent = 'Cole Slaw';
+
+document.body.appendChild(ulEl);
+ulEl.appendChild(liEl1);
+ulEl.appendChild(liEl2);
+ulEl.appendChild(liEl3);
+ulEl.appendChild(liEl4);
+
+// better to do a loop for the li elements D.R.Y.
